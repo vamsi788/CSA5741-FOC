@@ -1,0 +1,12 @@
+echo "enter number"
+read x
+year=$x
+x=$(($x % 4))
+[0
+if [ $y -eq 0 ]
+then
+echo "$year is leap year"
+else
+echo "$year is not leap year"
+fi
+~
