@@ -1,0 +1,17 @@
+echo "enter number1"
+read number1
+echo "enter number2"
+read number2
+echo "enter number3"
+read number3
+
+
+if [ $number1 -gt $number2 ] $$ [ $number1 -gt $number3 ]
+then
+     echo $number1
+elif [ $number2 -gt $number1 ] && [ $number2 -gt $number3 ]
+then
+        echo $number2
+else
+echo $number3
+fi
