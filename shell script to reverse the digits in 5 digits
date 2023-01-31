@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Get the input
+echo -n "Enter a 5-digit integer: "
+read num
+
+# Check if the input is a 5-digit integer
+if [[ $num =~ ^[0-9]{5}$ ]]; then
+  # Reverse the digits
+  reverse=""
+  while [ $num -ne 0 ]; do
+    reverse="$reverse$(($num%10))"
+    num=$(($num/10))
+  done
+  echo "The reverse of $num is $reverse"
+else
+  echo "Invalid input! Please enter a 5-digit integer."
+fi
