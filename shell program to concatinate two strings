@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Get the input strings
+echo -n "Enter the first string: "
+read str1
+echo -n "Enter the second string: "
+read str2
+
+# Concatenate the strings
+result="$str1$str2"
+
+# Find the length of the result
+length=${#result}
+
+# Output the result
+echo "The concatenated string is: $result"
+echo "The length of the concatenated string is: $length"
