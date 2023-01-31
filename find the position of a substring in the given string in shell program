@@ -1,0 +1,12 @@
+string="1s"
+substring="2k"
+
+# Find the position of the substring in the string
+pos=$(expr index "$string" "$substring")
+
+# Check if the substring was found
+if [ $pos -eq 0 ]; then
+  echo "Substring not found in string"
+else
+  echo "Substring found at position $pos"
+fi
