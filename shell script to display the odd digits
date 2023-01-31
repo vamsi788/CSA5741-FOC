@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -p "Enter a 5-digit number: " num
+
+echo "The digits in odd positions are:"
+for (( i=0; i<5; i++ ))
+do
+  if [ $((i % 2)) -ne 0 ]; then
+    digit=${num:$i:1}
+    echo $digit
+  fi
+done
