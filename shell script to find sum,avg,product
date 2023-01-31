@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Enter the first integer: " num1
+read -p "Enter the second integer: " num2
+read -p "Enter the third integer: " num3
+read -p "Enter the fourth integer: " num4
+
+sum=$((num1 + num2 + num3 + num4))
+average=$((sum / 4))
+product=$((num1 * num2 * num3 * num4))
+
+echo "The sum of the integers is: $sum"
+echo "The average of the integers is: $average"
+echo "The product of the integers is: $product"
